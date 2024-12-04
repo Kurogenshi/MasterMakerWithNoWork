@@ -89,7 +89,7 @@ void init_masters()
 					{"Programmation objet concurrente", 0.0, 1.0},
 					{"Genie logiciel", 0.0, 2.5},
 					{"C++", 0.0, 1.0},
-                    {"Intro. aux sciences des données & apprentissage automatique", 0.0, 1.0}
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 1.0}
 				},
 				8.0
 			},
@@ -106,7 +106,7 @@ void init_masters()
                 {
 					{"C++", 0.0, 2.0},
 					{"Methodes numeriques pour l'informatique", 0.0, 2.0},
-                    {"Intro. aux sciences des données & apprentissage automatique", 0.0, 2.0}
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 2.0}
 				},
 				7.0
 			}
@@ -141,8 +141,8 @@ void init_masters()
                     {"Seminaire", 0.0, 1.0},
                     {"Programmation objet concurrente", 0.0, 1.0},
                     {"Genie logiciel", 0.0, 2.5},
-                    {"Sécurité des applications", 0.0, 1.0},
-                    {"Intro. aux sciences des données & apprentissage automatique", 0.0, 1.0}
+                    {"Securité des applications", 0.0, 1.0},
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 1.0}
                 },
                 8.0
             },
@@ -155,18 +155,18 @@ void init_masters()
                 4.0
             },
             {
-                "Acquérir principes et techniques pour des systèmes sûrs",
+                "Acquerir principes et techniques pour des systèmes surs",
                 {
-                    {"Sécurité des applications", 0.0, 2.0},
+                    {"Securité des applications", 0.0, 2.0},
                     {"Cryptographie", 0.0, 2.0},
-                    {"Intro. aux sciences des données & apprentissage automatique", 0.0, 2.0}
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 2.0}
                 },
                 7.0
             }
         },
         {
-            {"Probabilités pour l'informatique", 3.0, {"Acquérir principes et techniques pour des systèmes sûrs"}},
-            {"Programmation C++", 3.0, {"Acquérir principes et techniques pour des systèmes sûrs"}}
+            {"Probabilités pour l'informatique", 3.0, {"Acquerir principes et techniques pour des systèmes surs"}},
+            {"Programmation C++", 3.0, {"Acquerir principes et techniques pour des systèmes surs"}}
         }
     };
 }
