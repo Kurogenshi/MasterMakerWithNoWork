@@ -63,61 +63,64 @@ double calculer_moyenne_semestre(const std::vector<Bloc>& blocs) {
     return sommeMoyennes / sommeCoefficients;
 }
 
-void init_masters()
+void init_gig()
 {
     masters["GIG"] = {
-		"GIG",
+        "GIG",
         {
             {
-				"Maitriser les fondements de la science informatique",
+                "Maitriser les fondements de la science informatique",
                 {
-					{"Reseaux", 0.0, 1.0},
-					{"Complexite", 0.0, 2.5},
-					{"Seminaire", 0.0, 1.0},
-					{"Programmation objet concurrente", 0.0, 2.0},
-					{"Genie logiciel", 0.0, 0.5},
-					{"Methodes numeriques pour l'informatique", 0.0, 1.0}
-				},
-				8.0
-			},
+                    {"Reseaux", 0.0, 1.0},
+                    {"Complexite", 0.0, 2.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 2.0},
+                    {"Genie logiciel", 0.0, 0.5},
+                    {"Methodes numeriques pour l'informatique", 0.0, 1.0}
+                },
+                8.0
+            },
             {
-				"Mettre en oeuvre les technologies informatiques essentielles",
+                "Mettre en oeuvre les technologies informatiques essentielles",
                 {
-					{"Reseaux", 0.0, 2.0},
-					{"Complexite", 0.0, 0.5},
-					{"Seminaire", 0.0, 1.0},
-					{"Programmation objet concurrente", 0.0, 1.0},
-					{"Genie logiciel", 0.0, 2.5},
-					{"C++", 0.0, 1.0},
+                    {"Reseaux", 0.0, 2.0},
+                    {"Complexite", 0.0, 0.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 1.0},
+                    {"Genie logiciel", 0.0, 2.5},
+                    {"C++", 0.0, 1.0},
                     {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 1.0}
-				},
-				8.0
-			},
+                },
+                9.0
+            },
             {
-				"Connaitre et savoir apprehender le monde professionne",
+                "Connaitre et savoir apprehender le monde professionne",
                 {
-					{"Seminaire", 0.0, 2.0},
-					{"Gestion de projets informatiques", 0.0, 2.0}
-				},
-				4.0
-			},
+                    {"Seminaire", 0.0, 2.0},
+                    {"Gestion de projets informatiques", 0.0, 2.0}
+                },
+                4.0
+            },
             {
-				"Acquerir fondements et outils de l informatique graphique",
+                "Acquerir fondements et outils de l informatique graphique",
                 {
-					{"C++", 0.0, 2.0},
-					{"Methodes numeriques pour l'informatique", 0.0, 2.0},
+                    {"C++", 0.0, 2.0},
+                    {"Methodes numeriques pour l'informatique", 0.0, 2.0},
                     {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 2.0}
-				},
-				7.0
-			}
-		},
+                },
+                9.0
+            }
+        },
         {
             {"Programmation fonctionnelle", 3.0, {"Acquerir fondements et outils de l informatique graphique"}},
             {"Cryptographie", 3.0, {"Acquerir fondements et outils de l informatique graphique"}},
             {"Probabilites pour l'informatique", 3.0, {"Acquerir fondements et outils de l informatique graphique"}}
         }
-	};
+    };
+}
 
+void init_fsi()
+{
     masters["FSI"] = {
         "FSI",
         {
@@ -144,7 +147,7 @@ void init_masters()
                     {"Securité des applications", 0.0, 1.0},
                     {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 1.0}
                 },
-                8.0
+                9.0
             },
             {
                 "Connaitre et savoir apprehender le monde professionne",
@@ -161,7 +164,7 @@ void init_masters()
                     {"Cryptographie", 0.0, 2.0},
                     {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 2.0}
                 },
-                7.0
+                9.0
             }
         },
         {
@@ -169,6 +172,244 @@ void init_masters()
             {"Programmation C++", 3.0, {"Acquerir principes et techniques pour des systèmes surs"}}
         }
     };
+}
+
+void init_imd()
+{
+    masters["IMD"] = {
+        "IMD",
+        {
+            {
+                "Maitriser les fondements de la science informatique",
+                {
+                    {"Reseaux", 0.0, 1.0},
+                    {"Complexite", 0.0, 2.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 2.0},
+                    {"Genie logiciel", 0.0, 0.5},
+                    {"Programmation fonctionnelle", 0.0, 1.0},
+                    {"Methodes numeriques pour l'informatique", 0.0, 1.0},
+                    {"Probabilités pour l'informatique", 0.0, 1.0}
+                },
+                10.0
+            },
+            {
+                "Mettre en oeuvre les technologies informatiques essentielles",
+                {
+                    {"Reseaux", 0.0, 2.0},
+                    {"Complexite", 0.0, 0.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 1.0},
+                    {"Genie logiciel", 0.0, 2.5}
+                },
+                7.0
+            },
+            {
+                "Connaitre et savoir apprehender le monde professionne",
+                {
+                    {"Seminaire", 0.0, 2.0},
+                    {"Gestion de projets informatiques", 0.0, 2.0}
+                },
+                4.0
+            },
+            {
+                "Raisonner a l aide des formalismes de l informatique",
+                {
+                    {"Programmation fonctionnelle", 0.0, 2.0},
+                    {"Methodes numeriques pour l'informatique", 0.0, 2.0},
+                    {"Probabilités pour l'informatique", 0.0, 2.0}
+                },
+                9.0
+            }
+        },
+        {
+            {"Intro. aux sciences des donnees & apprentissage automatique", 3.0, {"Raisonner a l aide des formalismes de l informatique"}},
+            {"Programmation C++", 3.0, {"Raisonner a l aide des formalismes de l informatique"}}
+        }
+    };
+}
+
+void init_idl()
+{
+    masters["IDL"] = {
+        "IDL",
+        {
+            {
+                "Maitriser les fondements de la science informatique",
+                {
+                    {"Reseaux", 0.0, 1.0},
+                    {"Complexite", 0.0, 2.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 2.0},
+                    {"Genie logiciel", 0.0, 0.5}
+                },
+                7.0
+            },
+            {
+                "Mettre en oeuvre les technologies informatiques essentielles",
+                {
+                    {"Reseaux", 0.0, 2.0},
+                    {"Complexite", 0.0, 0.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 1.0},
+                    {"Genie logiciel", 0.0, 2.5},
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 1.0},
+                    {"Bases de donnees avancees", 0.0, 1.0},
+                    {"Donnees post-relationnelles", 0.0, 1.0}
+                },
+                10.0
+            },
+            {
+                "Connaitre et savoir apprehender le monde professionne",
+                {
+                    {"Seminaire", 0.0, 2.0},
+                    {"Gestion de projets informatiques", 0.0, 2.0}
+                },
+                4.0
+            },
+            {
+                "Analyser un besoin et concevoir une solution logicielle",
+                {
+                    {"Bases de donnees avancees", 0.0, 2.0},
+                    {"Donnees post-relationnelles", 0.0, 2.0},
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 2.0}
+                },
+                9.0
+            }
+        },
+        {
+            {"Cryptographie", 3.0, {"Analyser un besoin et concevoir une solution logicielle"}},
+            {"Intro. aux sciences des donnees & apprentissage automatique", 3.0, {"Analyser un besoin et concevoir une solution logicielle"}},
+            {"Probabilites pour l informatique", 3.0, {"Analyser un besoin et concevoir une solution logicielle"}},
+            {"Programmation C++", 3.0, {"Analyser un besoin et concevoir une solution logicielle"}},
+            {"Methodes numeriques pour l informatique", 3.0, {"Analyser un besoin et concevoir une solution logicielle"}},
+            {"Programmation fonctionnelle", 3.0, {"Analyser un besoin et concevoir une solution logicielle"}}
+        }
+    };
+}
+
+void init_iaaa()
+{
+    masters["IAAA"] = {
+        "IAAA",
+        {
+            {
+                "Maitriser les fondements de la science informatique",
+                {
+                    {"Reseaux", 0.0, 1.0},
+                    {"Complexite", 0.0, 2.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 2.0},
+                    {"Genie logiciel", 0.0, 0.5},
+                    {"Methodes numeriques pour l'informatique", 0.0, 1.0},
+                    {"Probabilités pour l'informatique", 0.0, 1.0}
+                },
+                9.0
+            },
+            {
+                "Mettre en oeuvre les technologies informatiques essentielles",
+                {
+                    {"Reseaux", 0.0, 2.0},
+                    {"Complexite", 0.0, 0.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 1.0},
+                    {"Genie logiciel", 0.0, 2.5},
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 1.0}
+                },
+                8.0
+            },
+            {
+                "Connaitre et savoir apprehender le monde professionne",
+                {
+                    {"Seminaire", 0.0, 2.0},
+                    {"Gestion de projets informatiques", 0.0, 2.0}
+                },
+                4.0
+            },
+            {
+                "Comprendre les fondements et outils de l apprentissage auto.",
+                {
+                    {"Methodes numeriques pour l'informatique", 0.0, 2.0},
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 2.0},
+                    {"Probabilités pour l'informatique", 0.0, 2.0}
+                },
+                9.0
+            }
+        },
+        {
+            {"Programmation C++", 3.0, {"Comprendre les fondements et outils de l apprentissage auto."}},
+            {"Programmation fonctionnelle", 3.0, {"Comprendre les fondements et outils de l apprentissage auto."}}
+        }
+    };
+}
+
+void init_sid()
+{
+    masters["SID"] = {
+        "SID",
+        {
+            {
+                "Maitriser les fondements de la science informatique",
+                {
+                    {"Reseaux", 0.0, 1.0},
+                    {"Complexite", 0.0, 2.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 2.0},
+                    {"Genie logiciel", 0.0, 0.5}
+                },
+                7.0
+            },
+            {
+                "Mettre en oeuvre les technologies informatiques essentielles",
+                {
+                    {"Reseaux", 0.0, 2.0},
+                    {"Complexite", 0.0, 0.5},
+                    {"Seminaire", 0.0, 1.0},
+                    {"Programmation objet concurrente", 0.0, 1.0},
+                    {"Genie logiciel", 0.0, 2.5},
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 1.0},
+                    {"Bases de donnees avancees", 0.0, 1.0},
+                    {"Donnees post-relationnelles", 0.0, 1.0}
+                },
+                10.0
+            },
+            {
+                "Connaitre et savoir apprehender le monde professionne",
+                {
+                    {"Seminaire", 0.0, 2.0},
+                    {"Gestion de projets informatiques", 0.0, 2.0}
+                },
+                4.0
+            },
+            {
+                "Comprendre fondements et techniques des sciences des donnees",
+                {
+                    {"Bases de donnees avancees", 0.0, 2.0},
+                    {"Donnees post-relationnelles", 0.0, 2.0},
+                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 2.0}
+                },
+                9.0
+            }
+        },
+        {
+            {"Cryptographie", 3.0, {"Comprendre fondements et techniques des sciences des donnees"}},
+            {"Securite des applications", 3.0, {"Comprendre fondements et techniques des sciences des donnees"}},
+            {"Probabilités pour l informatique", 3.0, {"Comprendre fondements et techniques des sciences des donnees"}},
+            {"Programmation C++", 3.0, {"Comprendre fondements et techniques des sciences des donnees"}},
+            {"Methodes numeriques pour l informatique", 3.0, {"Comprendre fondements et techniques des sciences des donnees"}},
+            {"Programmation fonctionnelle", 3.0, {"Comprendre fondements et techniques des sciences des donnees"}},
+        }
+    };
+}
+
+void init_masters()
+{
+    init_gig();
+    init_fsi();
+    init_imd();
+    init_idl();
+    init_iaaa();
+    init_sid();
 }
 
 Master choisir_master() {
