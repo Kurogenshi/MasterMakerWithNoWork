@@ -253,7 +253,7 @@ void init_idl()
                     {"Seminaire", 0.0, 1.0},
                     {"Programmation objet concurrente", 0.0, 1.0},
                     {"Genie logiciel", 0.0, 2.5},
-                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 1.0},
+                    {"Securité des applications", 0.0, 1.0},
                     {"Bases de donnees avancees", 0.0, 1.0},
                     {"Donnees post-relationnelles", 0.0, 1.0}
                 },
@@ -272,7 +272,7 @@ void init_idl()
                 {
                     {"Bases de donnees avancees", 0.0, 2.0},
                     {"Donnees post-relationnelles", 0.0, 2.0},
-                    {"Intro. aux sciences des donnees & apprentissage automatique", 0.0, 2.0}
+                    {"Securité des applications", 0.0, 2.0}
                 },
                 9.0
             }
